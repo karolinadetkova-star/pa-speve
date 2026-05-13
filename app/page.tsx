@@ -13,7 +13,7 @@ export default function Home() {
   
   return (
     <main className="max-w-md mx-auto min-h-screen px-5 pt-12 pb-24 bg-gradient-to-b from-teal-50 to-white">
-      <Greeting />
+      <Greeting name="Karolina" />
       <TodaySummary />
        <VoiceButton
         isRecording={isRecording}

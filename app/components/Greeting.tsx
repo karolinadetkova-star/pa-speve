@@ -3,7 +3,11 @@
 import { useEffect, useState } from "react"
 import { SpeveMascot } from "./SpeveMascot"
 
-export function Greeting() {
+interface GreetingProps {
+  name: string
+}
+
+export function Greeting({ name }: GreetingProps) {
   const [greeting, setGreeting] = useState("Good morning")
 
   useEffect(() => {
@@ -23,7 +27,7 @@ export function Greeting() {
     <div className="mb-6 pt-4">
         <div className="flex items-center justify-between">
             <h1 className="text-2xl font-bold text-teal-600 w-32">
-                {greeting}, Karolina 👋
+                {greeting}, {name} 👋
             </h1>
                 <SpeveMascot />
         </div>
