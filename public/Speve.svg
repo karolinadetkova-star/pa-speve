@@ -1,37 +1,5 @@
-export function SpeveMascot() {
-  return (
-    <div className="flex items-center gap-3">
-      {/* Speech bubble */}
-      <div className="relative bg-white rounded-3xl p-3 shadow-md border border-teal-100 max-w-[140px]">
-        <p className="text-xs text-gray-600 leading-relaxed">
-          I&apos;m Speve — your personal speedy Steve. But you can call me Speve.
-        </p>
-        <div className="absolute right-[-8px] top-1/2 -translate-y-1/2 w-0 h-0 border-t-[8px] border-t-transparent border-b-[8px] border-b-transparent border-l-[8px] border-l-white" />
-      </div>
-
-      {/* Speve SVG inline */}
-      <svg width="90" height="92" viewBox="0 0 557 569" fill="none" xmlns="http://www.w3.org/2000/svg">
-        
-        <style>{`
-         @keyframes float {
-         0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(-12px); }
-  }
-        @keyframes blink {
-        0%, 88%, 100% { transform: scaleY(1); }
-       93% { transform: scaleY(0.05); }
-  }
-        @keyframes wave {
-        0%, 100% { transform: rotate(0deg); }
-        25% { transform: rotate(-30deg); }
-        75% { transform: rotate(15deg); }
-  }
-  [id="Speve"] { animation: float 3.5s ease-in-out infinite; }
-  [id="Right eye"] { animation: blink 4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
-  [id="Left eye "] { animation: blink 4s ease-in-out infinite 0.2s; transform-box: fill-box; transform-origin: center; }
-  [id="speve-right-hand"] { animation: wave 1.8s ease-in-out infinite; transform-box: fill-box; transform-origin: 10% 20%; }
-      `}</style>
-        <g id="Speve">
+<svg width="557" height="569" viewBox="0 0 557 569" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Speve the PA">
 <ellipse id="Shadow" cx="281.751" cy="549.5" rx="173" ry="19.5" fill="#E9E9E9"/>
 <g id="Body">
 <g id="Legs">
@@ -134,7 +102,4 @@ export function SpeveMascot() {
 <stop offset="1" stop-color="#F4D188"/>
 </linearGradient>
 </defs>
-      </svg>
-    </div>
-  )
-}
+</svg>
