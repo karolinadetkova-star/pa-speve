@@ -12,7 +12,7 @@ export default function Home() {
   const [activeTab, setActiveTab] = useState ("home")
   
   return (
-    <main className="max-w-md mx-auto min-h-screen px-5 pt-12 pb-24 bg-gradient-to-b from-teal-100 to-white">
+    <main className="max-w-md mx-auto min-h-screen px-5 pt-12 pb-24 bg-gradient-to-b from-sky-400 to-white">
       <Greeting name="Karolina" />
       <TodaySummary />
        <VoiceButton
